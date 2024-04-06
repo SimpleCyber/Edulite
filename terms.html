@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edu-Tech | Terms & Condition</title>
+    <link rel="stylesheet" href="terms.css">
+</head>
+<body>
+
+    <div class="terms-box">
+        <div class="terms-text">
+            <h2>Terms of Service</h2>
+            <p>Last Edit : 06/April/2024</p>
+            <p>Greeting Users.</p>
+
+            <!-- conditions here -->
+            <p> By utilizing our website, all schools agree that their teachers are obligated to attend all lectures and participate in tests whenever scheduled.</p>
+            <p>Failure to comply with attendance and testing requirements may result in restrictions on access to website features or termination of access altogether.</p>
+            <p>Schools acknowledge that regular participation in lectures and tests is essential for the effective use and benefit of our educational platform.</p>
+            <p>The administration of each school is responsible for ensuring that their teachers adhere to the attendance and testing policies outlined herein.</p>
+            <p>Any disputes regarding attendance or testing compliance shall be resolved in accordance with the procedures outlined in our dispute resolution policy, as stated on the website.</p>
+        </div>
+
+        <h4>I Agree to the<span>Terms of Service</span> and I read the Privacy Notice.</h4>
+        <div class="hii">
+            <input type="text" id="newSchoolName" placeholder="Enter new school name">
+            <br>
+            <input type="text" id="newSchoolLocation" placeholder="Enter new school District">
+            <br>
+            <input type="text" id="newSchoolTeachers" placeholder="Enter new school Number of teachers">
+            <br>
+            <input type="text" id="newSchoolStudents" placeholder="Enter new school Number of students">
+            <br>
+            <br>
+        </div>
+    
+        <div class="button">
+            <div class="btn red-btn" id="updateButton">Accept</div>
+            <div class="btn gray-btn" id="myButton">Decline</div>
+        </div>
+    
+
+
+    </div>
+
+
+
+    <script>
+        // JavaScript code to handle button click event
+        document.getElementById("myButton").addEventListener("click", function() {
+            // Navigate to the next page
+            window.location.href = "teachers.html"; // Replace "next_page.html" with the URL of your next page
+        });
+        </script>
+
+
+<script>
+    document.getElementById('updateButton').addEventListener('click', function() {
+        // Get input values
+        var newName = document.getElementById('newSchoolName').value;
+        var newLocation = document.getElementById('newSchoolLocation').value;
+        var newTeachers = document.getElementById('newSchoolTeachers').value;
+        var newStudents = document.getElementById('newSchoolStudents').value;
+
+        // Construct URL with updated school information
+        var url = "teachers.html?" +
+                  "name=" + encodeURIComponent(newName) +
+                  "&location=" + encodeURIComponent(newLocation) +
+                  "&teachers=" + encodeURIComponent(newTeachers) +
+                  "&students=" + encodeURIComponent(newStudents);
+
+        // Redirect back to teachers.html with updated information in URL parameters
+        window.location.href = url;
+    });
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+body{
+    margin:0;
+    padding: 0;
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.terms-box{
+    max-width: 460px;
+    background-color: #111;
+    color: #fff;
+    font-size: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 60px 30px;
+}
+
+.terms-text{
+    padding: 0 20px;
+    height: 400px;
+    overflow-x: auto;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.terms-text::-webkit-scrollbar{
+    width: 2px;
+    background-color: #282828;
+}
+
+.terms-text::-webkit-scrollbar-thumb{
+    background-color: #d13639;
+}
+
+
+.terms-text h2{
+    text-transform: uppercase;
+}
+
+.terms-box h4{
+    font-size: 13px;
+    text-align: center;
+    padding: 0 40px;
+}
+
+.terms-box h4 span{
+    color: #d13639;
+}
+
+.button{
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.btn{
+    height: 50px;
+    width: calc(50% - 6px);
+    border: 0;
+    border-radius: 6px;
+    font-size: 19px;
+    font-weight: 500;
+    color: #fff;
+    transition: .3s linear;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.red-btn{
+    background-color: #d13639;
+}
+
+.gray-btn{
+    background-color: #282828;
+}
+
+.btn:hover{
+    opacity: .6;
+}
+
+
+.hii{
+    padding-left: 30px;
+
+}
+

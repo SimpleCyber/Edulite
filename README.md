@@ -1,1 +1,1 @@
-# edulite
+# course
